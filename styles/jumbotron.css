@@ -1,0 +1,14 @@
+.page-container{
+    max-width: 1440px;
+    width: 100%;
+    background-color: #000;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding: 72px 0 36px;
+}
+.head-text{
+    display: block;
+    font-size: 46px;
+    text-transform: uppercase;
+}
