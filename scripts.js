@@ -5,10 +5,15 @@ var adviceInModalWindow = document.querySelector('.modal-description');
 
 textFieldButton.addEventListener('click', function (event){
     event.preventDefault();
-    modalWindow.classList.add('modal-wrapper--visible');
-    theAnswer = randomPhrase(whatToDoList, howToDoList, likeWhatToDoList);
-
-    adviceInModalWindow.innerHTML = theAnswer;
+    var inputValue = document.querySelector('.search-input').value;
+    if (inputValue.length === 0){
+        alert('Ты чо, пес? Введи вопрос!');
+    } else{
+        modalWindow.classList.add('modal-wrapper--visible');
+        theAnswer = randomPhrase(whatToDoList, howToDoList, likeWhatToDoList);
+        adviceInModalWindow.innerHTML = theAnswer;
+    };
+    
 });
 
 modalCloseButton.addEventListener('click', ()=>{
@@ -20,10 +25,14 @@ var howToDoList = ['быстро,', 'аккуратно,', 'гордо,', 'ос�
 var likeWhatToDoList = ['как сын маиной подруги', 'как смелый скунс', 'как немытый карп', 'как лазурный пес', 'как гордый лев', 'как храбрый кабанчик', 'как прыткая лиса', 'как начальник', 'как мудрец', 'как ласковый котя', 'как веселый щенок', 'как агрессивный гусь', 'как теплый хлебушек', 'как румяный пирожочек', 'как главный бухгалтер', 'как жесточайший батя'];
 
 function randomPhrase(list1, list2, list3){
-    randomIndex1 = Math.floor(Math.random() * list1.length);
-    randomIndex2 = Math.floor(Math.random() * list1.length);
-    randomIndex3 = Math.floor(Math.random() * list1.length);
+    randomIndex1 = getRandomIndex(list1.length);
+    randomIndex2 = getRandomIndex(list2.length);
+    randomIndex3 = getRandomIndex(list3.length);
     return list1[randomIndex1] + ' ' + list2[randomIndex2] + ' ' + list3[randomIndex3] + '!';
+}
+
+function getRandomIndex(listLength){
+    return Math.floor(Math.random() * listLength);
 }
 
 
