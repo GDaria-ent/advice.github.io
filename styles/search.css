@@ -41,3 +41,7 @@
     font-size: 24px;
     right: 6px;
 }
+
+.search-button:hover{
+    background-color: rgba(129, 4, 102, 0.671);
+}
