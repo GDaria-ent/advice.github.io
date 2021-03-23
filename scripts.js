@@ -2,12 +2,14 @@ var modalCloseButton = document.querySelector('.close-modal');
 var textFieldButton = document.querySelector('.search-button');
 var modalWindow = document.querySelector('.modal-wrapper');
 var adviceInModalWindow = document.querySelector('.modal-description');
+var closeAlertButton = document.querySelector('.alert-button');
+var alertWindow = document.querySelector('.alert');
 
 textFieldButton.addEventListener('click', function (event){
     event.preventDefault();
     var inputValue = document.querySelector('.search-input').value;
     if (inputValue.length === 0){
-        alert('Ты чо, пес? Введи вопрос!');
+        alertWindow.classList.add('alert--visible');
     } else{
         modalWindow.classList.add('modal-wrapper--visible');
         theAnswer = randomPhrase(whatToDoList, howToDoList, likeWhatToDoList);
@@ -19,6 +21,10 @@ textFieldButton.addEventListener('click', function (event){
 modalCloseButton.addEventListener('click', ()=>{
     modalWindow.classList.remove('modal-wrapper--visible');
 });
+
+closeAlertButton.addEventListener('click', function(){
+    alertWindow.classList.remove('alert--visible');
+})
 
 var whatToDoList = ['Забудь о проблемах', 'Сними стресс', 'Покушай котлетьку', 'Двигайся вперед', 'Покушай курочку', 'Отдохни', 'Позвони маме', 'Попей чайку', 'Делай свое дело', 'Иди к поставленной цели', 'Используй новые возможности', 'Оставь все страхи позади', 'Принимай решения', 'Хватай удачу за хвост', 'Займись своим здоровьем', 'Побалуй себя'];
 var howToDoList = ['быстро,', 'аккуратно,', 'гордо,', 'осторожненько,', 'хитро,', 'божественно,', 'с умом,', 'забыв обо всем,', 'быстро, ловко и умело,', 'по-королевски,', 'играючи,', 'зыркая по сторонам,', 'сосредоточенно,', 'шустренько,', 'со вкусом,', 'ироничненько,'];
