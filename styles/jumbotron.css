@@ -6,11 +6,12 @@
     color: #fff;
 }
 .page-head{
-    text-align: center;
+    height: 250px;
     padding: 72px 0 36px;
+    position: relative;
 }
-.head-text{
+ .head-text{
     display: block;
     font-size: 46px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }

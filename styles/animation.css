@@ -1,0 +1,60 @@
+.head-text--first{
+    animation: first-line 3s 1 ease;
+    animation-delay: 1s;
+    position: absolute;
+    font-size: 60px;
+    animation-fill-mode: both;
+    text-transform: uppercase;
+}
+.head-text--second{
+    position: absolute;
+    animation-fill-mode: both;
+    font-size: 20px;
+    animation-delay: 3s;
+    animation: second-line 3s 1 ease;
+    animation-fill-mode: both;
+}
+.head-text--third{
+    position: absolute;
+    animation-fill-mode: both;
+    font-size: 20px;
+    animation-delay: 5s;
+    animation: third-line 3s 1 ease;
+    animation-fill-mode: both;
+}
+@keyframes first-line{
+    from{
+        opacity: 0;
+        top: 0;
+        left: 500px;
+    }
+    to{
+        opacity: 1;
+        top: 85px;
+        left: 500px;
+    }
+}
+@keyframes second-line{
+    from{
+        opacity: 0;
+        top: 150px;
+        left: 0;
+    }
+    to{
+        opacity: 1;
+        top: 150px;
+        left: 500px;
+    }
+}
+@keyframes third-line{
+    from{
+        opacity: 0;
+        top: 150px;
+        right: 0;
+    }
+    to{
+        opacity: 1;
+        top: 150px;
+        right: 550px;
+    }
+}
