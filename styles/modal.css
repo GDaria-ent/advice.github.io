@@ -3,7 +3,7 @@
     top: 0px;
     bottom: 0;
     right: 0;
-    left: 10px;
+    left: 0;
     overflow: hidden;
     overflow-y: auto;  /* автоматически добавляет вертикальный скролл, если нужно */
     -webkit-overflow-scrolling: touch; /* скролл для всяких трогательных девайсов*/
