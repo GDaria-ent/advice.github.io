@@ -1,26 +1,26 @@
-/* .head-text--first{
-    animation: first-line 4s 1 ease;
+.head-text-first{
+    animation: first-line 1s 1 ease;
     position: absolute;
     font-size: 60px;
     animation-fill-mode: both;
     text-transform: uppercase;
 }
-.head-text--second{
+.head-text-second{
     position: absolute;
     animation-fill-mode: both;
     font-size: 20px;
-    animation-delay: 4s;
-    animation: second-line 4s 1 ease;
+    animation-delay: 1s;
+    animation: second-line 1s 1 ease;
     animation-fill-mode: both;
 }
-.head-text--third{
+.head-text-third{
     position: absolute;
     animation-fill-mode: both;
     font-size: 20px;
-    animation-delay: 6s;
-    animation: third-line 4s 1 ease;
+    animation-delay: 1s;
+    animation: third-line 1s 1 ease;
     animation-fill-mode: both;
-} */
+}
 @keyframes first-line{
     from{
         opacity: 0;
@@ -46,14 +46,14 @@
     }
 }
 @keyframes third-line{
-    from{
+    0%{
         opacity: 0;
-        top: 150px;
+        top: 60%;
         right: 0;
     }
-    to{
+    100%{
         opacity: 1;
         top: 150px;
-        right: 257px;
+        right: 29%;
     }
 }

@@ -52,6 +52,35 @@
         
     }
 }
+@media screen and (max-width: 850px){
+    @keyframes third-line{
+        0%{
+            opacity: 0;
+            top: 60%;
+            right: 24%;
+        }
+        100%{
+            opacity: 1;
+            top: 60%;
+            right: 24%;
+        }
+    }
+}
+@media screen and (max-width: 794px){
+    @keyframes third-line{
+        0%{
+            opacity: 0;
+            top: 60%;
+            
+            
+        }
+        100%{
+            opacity: 1;
+            top: 70%;
+            
+        }
+    }
+}
 
 @media screen and (max-width: 428px){
     .search-input{
@@ -71,6 +100,10 @@
     .modal-svg{
         width: 20px;
         height: 20px;
+    }
+    .page-head{
+        height: 152px;
+        padding: 10px 0 10px;
     }
 }
     

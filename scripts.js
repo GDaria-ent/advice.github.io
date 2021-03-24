@@ -4,6 +4,8 @@ var modalWindow = document.querySelector('.modal-wrapper');
 var adviceInModalWindow = document.querySelector('.modal-description');
 var closeAlertButton = document.querySelector('.alert-button');
 var alertWindow = document.querySelector('.alert');
+var textInHeader = document.querySelectorAll('.head-text');
+var svgInHeader = document.querySelector('.svg-container');
 
 textFieldButton.addEventListener('click', function (event){
     event.preventDefault();
@@ -40,5 +42,17 @@ function randomPhrase(list1, list2, list3){
 function getRandomIndex(listLength){
     return Math.floor(Math.random() * listLength);
 }
+
+
+setTimeout(function (){
+    textInHeader.forEach(function(element){
+        element.classList.add('head-text--invisible');
+    });
+    
+}, 2000);
+
+setTimeout(function(){
+    svgInHeader.classList.add('svg-container--visible');
+}, 2100);
 
 
