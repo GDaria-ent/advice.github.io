@@ -66,20 +66,12 @@
         }
     }
 }
-@media screen and (max-width: 794px){
-    @keyframes third-line{
-        0%{
-            opacity: 0;
-            top: 60%;
-            
-            
-        }
-        100%{
-            opacity: 1;
-            top: 70%;
-            
-        }
+
+@media screen and (max-width: 798px){
+    .head-text{
+        display: none;
     }
+    
 }
 
 @media screen and (max-width: 428px){
@@ -103,7 +95,13 @@
     }
     .page-head{
         height: 152px;
-        padding: 10px 0 10px;
+        padding: 15px 0 15px;
+    }
+    .feedback-head {
+        margin-bottom: 25px;
+    }
+    .field-wrapper{
+        margin-bottom: 25px;
     }
 }
     

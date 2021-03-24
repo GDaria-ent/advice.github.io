@@ -49,10 +49,10 @@ setTimeout(function (){
         element.classList.add('head-text--invisible');
     });
     
-}, 2000);
+}, 1000);
 
 setTimeout(function(){
     svgInHeader.classList.add('svg-container--visible');
-}, 2100);
+}, 1000);
 
 
