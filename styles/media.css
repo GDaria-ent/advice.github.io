@@ -74,7 +74,7 @@
     
 }
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 430px){
     .search-input{
         font-size: 14px;
         padding-left: 10px;
@@ -102,6 +102,10 @@
     }
     .field-wrapper{
         margin-bottom: 25px;
+    }
+    .head-svg{
+        max-width: 250px;
+        
     }
 }
     
